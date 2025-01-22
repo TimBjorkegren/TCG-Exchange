@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "image": "https://cdn.starwebserver.se/shops/coolcard/files/sv151-025.jpg",
+        "nameOfCard": "Pikachu",
+        "Graded": "PSA: 9",
+        "Rarity": "None-Rare",
+        "Graphics": "Normal Print",
+        "Price": "2$"
+    },
+    {
+        "id": "2",
+        "image": "https://cc-client-assets.nyc3.cdn.digitaloceanspaces.com/photo/collectorscache/file/0e5e5ba01ae411e7a6e285e56101c94d/psyduck87.jpg",
+        "nameOfCard": "Psyduck",
+        "Graded": "PSA: 10",
+        "Rarity": "Very Rare",
+        "Graphics": "Reverse Holo",
+        "Price": "9$"
+    },
+    {
+        "id": "3",
+        "image": "https://cardotaku.com/cdn/shop/files/043854_P_HITOKAGE.jpg?v=1689918264&width=2048",
+        "nameOfCard": "Charmander",
+        "Graded": "PSA: 8",
+        "Rarity": "Common",
+        "Graphics": "Normal",
+        "Price": "3$"
+    },
+    {
+        "id": "4",
+        "image": "https://storage.googleapis.com/images.pricecharting.com/56e29651618a84d930dbc7b239f17ef0ad2f4e691123da20b3a389e3bee45235/1600.jpg",
+        "nameOfCard": "Bulbasaur",
+        "Graded": "PSA: 10",
+        "Rarity": "Rare",
+        "Graphics": "Holo",
+        "Price": "15$"
+    },
+    {
+        "id": "5",
+        "image": "https://i.ebayimg.com/images/g/2IUAAOSwjOtk0ylL/s-l1200.png",
+        "nameOfCard": "Squirtle",
+        "Graded": "PSA: 10",
+        "Rarity": "Very Rare",
+        "Graphics": "Illustration Art",
+        "Price": "150$"
+    },
+    {
+        "id": "6",
+        "image": "https://m.media-amazon.com/images/I/51uAmysr6IL.jpg",
+        "nameOfCard": "Jigglypuff",
+        "Graded": "PSA: 7",
+        "Rarity": "Rare",
+        "Graphics": "Reverse Holo",
+        "Price": "5$"
+    },
+    {
+        "id": "7",
+        "image": "https://m.media-amazon.com/images/I/710ugsdR7BL.jpg",
+        "nameOfCard": "Eevee",
+        "Graded": "PSA: 10",
+        "Rarity": "Very Rare",
+        "Graphics": "Full Art",
+        "Price": "40$"
+    },
+    {
+        "id": "8",
+        "image": "https://m.media-amazon.com/images/I/615VQ-CVBaL._AC_UF894,1000_QL80_.jpg",
+        "nameOfCard": "Snorlax",
+        "Graded": "PSA: 9",
+        "Rarity": "Rare",
+        "Graphics": "Normal",
+        "Price": "12$"
+    },
+    {
+        "id": "9",
+        "image": "https://cdn.starwebserver.se/shops/coolcard/files/cache/sv151-066-rh_dupytfsq1_medium.jpg?_=1697119364",
+        "nameOfCard": "Machop",
+        "Graded": "PSA: 8",
+        "Rarity": "Common",
+        "Graphics": "Normal Print",
+        "Price": "1$"
+    },
+    {
+        "id": "10",
+        "image": "https://m.media-amazon.com/images/I/51Qs4FjaAkL._AC_UF894,1000_QL80_.jpg",
+        "nameOfCard": "Mewtwo",
+        "Graded": "PSA: 10",
+        "Rarity": "Legendary",
+        "Graphics": "Holo",
+        "Price": "90$"
+    }
+]

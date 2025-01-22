@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import NavBar from "./NavBar";
 import ShoppingContainer from "./shoppingContainer";
 import MainPage from "./MainPage";
+import PokemonCards from './PokemonCards';
 
 // Skapa en sida där du kan köpa och om man hinner sälja pokemon/någon typ av kort
 //Målet är att kunna lägga produkter i en varukorg och sedan gå till checkout på en annan sida
@@ -11,7 +12,7 @@ import MainPage from "./MainPage";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <NavBar />
-    <ShoppingContainer />
+    <PokemonCards />
     <BrowserRouter>
       <Routes>
 

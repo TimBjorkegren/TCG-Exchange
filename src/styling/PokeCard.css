@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poiret+One&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.pokemonContainer {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: rgb(72, 66, 66);
+    padding: 1rem;
+    box-shadow: 10px 5px 5px rgb(13, 11, 11);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.pokemonName,
+.pokemonGraded,
+.pokemonRarity,
+.pokemonGraphics,
+.pokemonPrice {
+    color: white;
+    font-family: "Fira Sans", serif;
+}
+
+.pokemonName {
+    margin-top: 10px;
+    font-family: "Press Start 2P", serif;
+}
+
+.add-to-cart {
+    cursor: pointer;
+    gap: 50px;
+    font-family: "Fira Sans", serif;
+    width: 80px;
+    height: 30px;
+}
