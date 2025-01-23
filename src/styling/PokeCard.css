@@ -5,6 +5,8 @@ img {
     max-width: 200px;
     height: auto;
     border-radius: 5%;
+    outline-offset: 0px;
+    outline: 0.5px solid rgb(0, 0, 0);
 }
 
 .pokemonContainer {
@@ -13,9 +15,12 @@ img {
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    background-color: rgb(72, 66, 66);
+    background-color: rgb(227, 224, 224);
     padding: 1rem;
     box-shadow: 10px 5px 5px rgb(13, 11, 11);
+    outline-offset: 0px;
+    outline: 0.5px solid rgb(0, 0, 0);
+
 }
 
 section {
@@ -23,6 +28,7 @@ section {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
+    background-color: antiquewhite;
 }
 
 .pokemonName,
@@ -30,7 +36,7 @@ section {
 .pokemonRarity,
 .pokemonGraphics,
 .pokemonPrice {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Fira Sans", serif;
 }
 

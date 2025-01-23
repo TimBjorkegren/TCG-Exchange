@@ -24,3 +24,14 @@
     font-size: 20px;
     font-family: "Fira Sans", serif;
 }
+
+.navRight button {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Fira Sans", serif;
+    padding: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

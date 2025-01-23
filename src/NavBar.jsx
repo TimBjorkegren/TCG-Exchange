@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styling/Navbar.css'
 
 const NavBar = () => {
+    const [showCart, setShowCart] = useState(false);
+
+    useEffect(() => {
+        if (showCart) {
+            document.body.classList.add('showCart');
+        } else {
+            document.body.classList.remove('showCart');
+        }
+
+        return () => {
+            document.body.classList.remove('showCart');
+        };
+    }, [showCart]);
+
+
+
     return (
         <nav className="navbar">
             <div className='navLeft'>
@@ -11,8 +27,15 @@ const NavBar = () => {
                 <a href='/'>Shop</a>
             </div>
             <div className='navRight'>
-                <a href='/'>Shopping Cart</a>
+                <button onClick={() => setShowCart(!showCart)}>
+                    {showCart ? 'Close Cart' : 'Show Cart'}
+                </button>
             </div>
+
+            {showCart && (
+                <div className="cartTab">
+                </div>
+            )}
         </nav>
     )
 }
