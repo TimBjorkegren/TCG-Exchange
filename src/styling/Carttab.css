@@ -51,7 +51,9 @@ body.showCart .cartTab {
 }
 
 .listCart .quantity span {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 25px;
     height: 25px;
     background-color: #eee;

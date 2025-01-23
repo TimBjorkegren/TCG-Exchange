@@ -1,27 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect, use } from 'react'
 import './styling/Carttab.css'
+import cards from './Cards.json'
 
 const CartTab = () => {
+    const [cartItems, updateCartItems] = useState([]);
+
+    useEffect(() => {
+        updateCartItems(cards);
+    }, [])
+
     return (
         <div className='cartTab'>
             <h1>Shopping Cart</h1>
             <div className='listCart'>
-                <div className='item'>
-                    <div className='image'>
-                        <img src="/"></img>
+                {cartItems.map((item) => (
+                    <div className='item'>
+                        <div className='image'>
+                            <img src={item.image} ></img>
+                        </div>
+                        <div className='name'>
+                            {item.nameOfCard}
+                        </div>
+                        <div className='totalPrice'>
+                            {item.Price}
+                        </div>
+                        <div className='quantity'>
+                            <span className='minus'> - </span>
+                            <span>1</span>
+                            <span className='plus'> + </span>
+                        </div>
                     </div>
-                    <div className='name'>
-                        Name
-                    </div>
-                    <div className='totalPrice'>
-                        200$
-                    </div>
-                    <div className='quantity'>
-                        <span className='minus'> - </span>
-                        <span>1</span>
-                        <span className='plus'> + </span>
-                    </div>
-                </div>
+                ))}
             </div>
             <div className='btn'>
                 <button className='close'>CLOSE</button>
