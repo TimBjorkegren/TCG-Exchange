@@ -27,7 +27,7 @@ const NavBar = ({ }) => {
     return (
         <nav className="navbar">
             <div className='navLeft'>
-                <a href='/' className='logo'>TCG-Exchange</a>
+                <a href='/' className='logo'><img src="https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_1280.png" alt="TCH-EXCHANGE" /></a>
             </div>
             <div className='navCenter'>
                 <a href='/'>Shop</a>

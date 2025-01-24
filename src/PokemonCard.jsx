@@ -23,7 +23,7 @@ const PokemonCard = ({ card }) => {
             </div>
             <div className="pokemonGraphics">{card.Graphics} </div>
             <div className="pokemonPrice">{card.Price} </div>
-            <button className='add-to-cart' onClick={() => addItemsToCartFunction(card)}>Add To Cart</button>
+            <button className='add-to-cart' onClick={() => addItemsToCartFunction(card)}>ADD TO CART</button>
 
         </div>
     )

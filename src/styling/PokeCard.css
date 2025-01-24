@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poiret+One&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poiret+One&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 img {
     max-width: 200px;
@@ -11,24 +13,49 @@ img {
 
 .pokemonContainer {
     display: flex;
-    max-width: 100%;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
-    background-color: rgb(227, 224, 224);
+    margin-top: 120px;
+    /* background-color: rgb(196, 189, 189); */
+    background: linear-gradient(50deg, rgb(196, 189, 189), rgb(51, 36, 61));
     padding: 1rem;
     box-shadow: 10px 5px 5px rgb(13, 11, 11);
     outline-offset: 0px;
     outline: 0.5px solid rgb(0, 0, 0);
+    border-radius: 18px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 
 }
 
+/*
+.rgb::after {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff9a00,
+            #d0de21,
+            #4fdc4a,
+            #3fdad8,
+            #2fc9e2,
+            #1c7fee,
+            #5f15f2,
+            #ba0cf8,
+            #fb07d9,
+            #ff0000) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+} */
+
 section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    row-gap: -50px;
+    column-gap: 30px;
     justify-content: center;
-    background-color: antiquewhite;
+    flex-wrap: nowrap;
+    background-color: rgb(32, 32, 31);
+    padding: 0px 40px;
 }
 
 .pokemonName,
@@ -38,17 +65,25 @@ section {
 .pokemonPrice {
     color: rgb(0, 0, 0);
     font-family: "Fira Sans", serif;
+    font-size: large
 }
 
 .pokemonName {
     margin-top: 10px;
-    font-family: "Press Start 2P", serif;
+    font-family: "Archivo Black", serif;
+    font-size: 20px;
 }
 
 .add-to-cart {
     cursor: pointer;
     gap: 50px;
     font-family: "Fira Sans", serif;
-    width: 80px;
-    height: 30px;
+    width: 125px;
+    height: 40px;
+    color: white;
+    background-color: rgb(27, 25, 25);
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
 }

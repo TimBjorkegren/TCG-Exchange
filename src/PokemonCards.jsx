@@ -9,7 +9,7 @@ const PokemonCards = () => {
 
 
     return (
-        <section className="bg-blue-50 px-4 py-10">
+        <section className="">
             {
                 cards.map((card) => (
                     <PokemonCard key={card.id} card={card} />
