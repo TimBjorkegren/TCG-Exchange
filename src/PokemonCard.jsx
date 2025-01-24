@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect, use } from 'react'
 import './styling/PokeCard.css'
+import cards from './Cards.json'
 
 const PokemonCard = ({ card }) => {
+
+    const [cartItems, updateCartItems] = useState([]);
+
+    useEffect(() => {
+        updateCartItems(cards);
+    }, [])
+
+
     return (
         <div className="pokemonContainer">
             <img className="pokemonImage" src={card.image} ></img>

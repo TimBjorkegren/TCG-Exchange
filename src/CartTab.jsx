@@ -21,12 +21,12 @@ const CartTab = () => {
                         <div className='name'>
                             {item.nameOfCard}
                         </div>
-                        <div className='totalPrice'>
+                        <div className='totalPrice' id='totalPriceId' >
                             {item.Price}
                         </div>
                         <div className='quantity'>
                             <span className='minus'> - </span>
-                            <span>1</span>
+                            <span className='quantityCart'>1</span>
                             <span className='plus'> + </span>
                         </div>
                     </div>

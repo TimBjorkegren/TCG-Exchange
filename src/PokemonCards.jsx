@@ -5,6 +5,9 @@ import './styling/PokeCard.css'
 
 const PokemonCards = () => {
     console.log(cards)
+
+
+
     return (
         <section className="bg-blue-50 px-4 py-10">
             {
