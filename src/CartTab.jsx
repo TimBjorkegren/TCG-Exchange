@@ -1,6 +1,5 @@
 import React, { useState, useEffect, use } from 'react'
 import './styling/Carttab.css'
-//import cards from './Cards.json'
 import { useCart } from './CartManager';
 
 const CartTab = ({ cartItems = [] }) => {

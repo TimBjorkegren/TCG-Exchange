@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import './styling/Navbar.css'
+import { useCart } from './CartManager';
 
-const NavBar = () => {
+const NavBar = ({ }) => {
     const [showCart, setShowCart] = useState(false);
+    const { cartItems } = useCart();
+
+    const totalQuantity = Array.isArray(cartItems) ? cartItems.reduce((acc, item) => acc + item.quantity, 0) : 0;
+    console.log("total", totalQuantity)
+    console.log("what items", cartItems)
 
     useEffect(() => {
         if (showCart) {
@@ -28,8 +34,9 @@ const NavBar = () => {
             </div>
             <div className='navRight'>
                 <button onClick={() => setShowCart(!showCart)}>
-                    {showCart ? 'Close Cart' : 'Show Cart'}
+                    <i className="fas fa-shopping-cart"></i>
                 </button>
+                <span>{totalQuantity} </span>
             </div>
 
             {showCart && (

@@ -88,5 +88,95 @@
         "Rarity": "Legendary",
         "Graphics": "Holo",
         "Price": "90$"
+    },
+    {
+        "id": "11",
+        "image": "https://tcgplayer-cdn.tcgplayer.com/product/124114_in_1000x1000.jpg",
+        "nameOfCard": "Charizard",
+        "Graded": "PSA: 9",
+        "Rarity": "Legendary",
+        "Graphics": "Full Art",
+        "Price": "250$"
+    },
+    {
+        "id": "12",
+        "image": "https://d1htnxwo4o0jhw.cloudfront.net/spec/544119/small/hWNtmnGEIU-Zmx-MnSKHLw.jpg",
+        "nameOfCard": "Blastoise",
+        "Graded": "PSA: 10",
+        "Rarity": "Rare",
+        "Graphics": "Holo",
+        "Price": "75$"
+    },
+    {
+        "id": "13",
+        "image": "https://tcgplayer-cdn.tcgplayer.com/product/550126_in_1000x1000.jpg",
+        "nameOfCard": "Alakazam",
+        "Graded": "PSA: 8",
+        "Rarity": "Rare",
+        "Graphics": "Normal",
+        "Price": "25$"
+    },
+    {
+        "id": "14",
+        "image": "https://m.media-amazon.com/images/I/41o1GFokZyL._AC_UF1000,1000_QL80_.jpg",
+        "nameOfCard": "Pidgeot",
+        "Graded": "PSA: 9",
+        "Rarity": "Rare",
+        "Graphics": "Holo",
+        "Price": "10$"
+    },
+    {
+        "id": "15",
+        "image": "https://preview.redd.it/zapdos-from-151-all-the-full-arts-are-pretty-special-but-i-v0-eq7ifbdgyr4b1.jpg?auto=webp&s=b93693d666073d0efaa30e4f25ce2c3193273419",
+        "nameOfCard": "Zapdos",
+        "Graded": "PSA: 10",
+        "Rarity": "Legendary",
+        "Graphics": "Full Art",
+        "Price": "120$"
+    },
+    {
+        "id": "16",
+        "image": "https://m.media-amazon.com/images/I/511-fiyytML._AC_UF1000,1000_QL80_.jpg",
+        "nameOfCard": "Machamp",
+        "Graded": "PSA: 8",
+        "Rarity": "Rare",
+        "Graphics": "Reverse Holo",
+        "Price": "20$"
+    },
+    {
+        "id": "17",
+        "image": "https://m.media-amazon.com/images/I/41HL3QQDn0L._AC_UF1000,1000_QL80_.jpg",
+        "nameOfCard": "Vaporeon",
+        "Graded": "PSA: 10",
+        "Rarity": "Rare",
+        "Graphics": "Full Art",
+        "Price": "60$"
+    },
+    {
+        "id": "18",
+        "image": "https://m.media-amazon.com/images/I/51fQlzphzWL._AC_UF1000,1000_QL80_.jpg",
+        "nameOfCard": "Gengar",
+        "Graded": "PSA: 9",
+        "Rarity": "Very Rare",
+        "Graphics": "Full Art",
+        "Price": "40$"
+    },
+    {
+        "id": "19",
+        "image": "https://crystalcommerce-assets.nyc3.cdn.digitaloceanspaces.com/photos/866167/120.jpg",
+        "nameOfCard": "Mew",
+        "Graded": "PSA: 9",
+        "Rarity": "Legendary",
+        "Graphics": "Full Art",
+        "Price": "80$"
+    },
+    {
+        "id": "20",
+        "image": "https://m.media-amazon.com/images/I/51KtYqsj2wL._AC_UF894,1000_QL80_.jpg",
+        "nameOfCard": "Lugia",
+        "Graded": "PSA: 10",
+        "Rarity": "Legendary",
+        "Graphics": "Holo",
+        "Price": "200$"
     }
 ]

@@ -1,6 +1,7 @@
 import React, { createContext, useState, useContext } from 'react'
 import cards from './Cards.json'
 import CartTab from './CartTab';
+import NavBar from './NavBar';
 
 
 const CartContext = createContext();
@@ -46,6 +47,7 @@ export const CartManager = ({ children }) => {
         <CartContext.Provider value={{ cartItems, addItemsToCartFunction, deleteItemsFromCartFunction, totalAmountCalcFunction }}>
             {children}
             <CartTab cartItems={cartItems} />
+            <NavBar cartItems={cartItems} />
         </CartContext.Provider>
     )
 }

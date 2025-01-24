@@ -12,7 +12,7 @@
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 100%;
     left: 0;
     position: fixed;
@@ -34,4 +34,21 @@
     border: none;
     background: none;
     cursor: pointer;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    right: 18px;
+}
+
+.navRight span {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 55%;
+    right: 16px;
 }

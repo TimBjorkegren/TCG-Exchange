@@ -5,9 +5,9 @@
     background-color: rgb(51, 49, 49);
     color: white;
     position: fixed;
-    top: 55px;
+    top: 71px;
     right: -400px;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 71px);
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: right 0.5s ease;
