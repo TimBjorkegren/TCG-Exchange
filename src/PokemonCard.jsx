@@ -1,10 +1,12 @@
 import React, { useState, useEffect, use } from 'react'
+import { useCart } from './CartManager';
 import './styling/PokeCard.css'
 import cards from './Cards.json'
 
 const PokemonCard = ({ card }) => {
 
     const [cartItems, updateCartItems] = useState([]);
+    const { addItemsToCartFunction } = useCart();
 
     useEffect(() => {
         updateCartItems(cards);
@@ -21,7 +23,7 @@ const PokemonCard = ({ card }) => {
             </div>
             <div className="pokemonGraphics">{card.Graphics} </div>
             <div className="pokemonPrice">{card.Price} </div>
-            <button className='add-to-cart'>Add To Cart</button>
+            <button className='add-to-cart' onClick={() => addItemsToCartFunction(card)}>Add To Cart</button>
 
         </div>
     )

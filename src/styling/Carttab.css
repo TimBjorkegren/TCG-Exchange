@@ -86,3 +86,11 @@ body.showCart .cartTab {
 .quantity {
     font-family: "Fira Sans", serif;
 }
+
+.empty {
+    font-family: "Fira Sans", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
