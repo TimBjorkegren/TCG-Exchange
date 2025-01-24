@@ -25,7 +25,16 @@ img {
     border-radius: 18px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    position: relative;
+    overflow: hidden;
 
+}
+
+.pokemonContainer:hover {
+    animation: none;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6);
+    border: 3px solid white;
+    transform: scale(1.05) translateY(-5px);
 }
 
 /*
