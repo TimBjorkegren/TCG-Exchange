@@ -1,6 +1,7 @@
 import React, { useState, useEffect, use } from 'react'
 import './styling/Carttab.css'
 import { useCart } from './CartManager';
+import { Link } from 'react-router';
 
 const CartTab = () => {
     const { cartItems, deleteItemsFromCartFunction, addItemsToCartFunction } = useCart();
@@ -33,7 +34,7 @@ const CartTab = () => {
             </div>
             <div className='btn'>
                 <button className='close'>CLOSE</button>
-                <button className='checkOut'>CHECK OUT</button>
+                <Link to='/checkout' className='checkOut'>CHECK OUT</Link>
             </div>
         </div>
     )

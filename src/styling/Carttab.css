@@ -5,9 +5,9 @@
     background-color: rgb(51, 49, 49);
     color: white;
     position: fixed;
-    top: 71px;
+    top: 75px;
     right: -400px;
-    height: calc(100vh - 71px);
+    height: calc(100vh - 75px);
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: right 0.5s ease;
@@ -30,12 +30,32 @@ body.showCart .cartTab {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.cartTab Link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .checkOut {
+    background-color: #E8BC0E;
+    border: none;
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
 .cartTab .btn button {
     background-color: #E8BC0E;
     border: none;
     font-family: "Fira Sans", serif;
     font-weight: 500;
     cursor: pointer;
+    font-size: 13px;
 }
 
 .cartTab .btn .close {
