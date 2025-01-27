@@ -45,9 +45,8 @@ export const CartManager = ({ children }) => {
 
     return (
         <CartContext.Provider value={{ cartItems, addItemsToCartFunction, deleteItemsFromCartFunction, totalAmountCalcFunction }}>
+            <CartTab />
             {children}
-            <CartTab cartItems={cartItems} />
-            <NavBar cartItems={cartItems} />
         </CartContext.Provider>
     )
 }

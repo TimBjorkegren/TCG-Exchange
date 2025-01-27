@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router';
 import './styling/Navbar.css'
 import { useCart } from './CartManager';
 
 const NavBar = ({ }) => {
     const [showCart, setShowCart] = useState(false);
-    const { cartItems } = useCart();
+    const { cartItems = [] } = useCart() || {};
 
     const totalQuantity = Array.isArray(cartItems) ? cartItems.reduce((acc, item) => acc + item.quantity, 0) : 0;
     console.log("total", totalQuantity)
@@ -30,7 +31,7 @@ const NavBar = ({ }) => {
                 <a href='/' className='logo'><img src="https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_1280.png" alt="TCH-EXCHANGE" /></a>
             </div>
             <div className='navCenter'>
-                <a href='/'>Shop</a>
+                <Link to='/shop'>Shop</Link>
             </div>
             <div className='navRight'>
                 <button onClick={() => setShowCart(!showCart)}>

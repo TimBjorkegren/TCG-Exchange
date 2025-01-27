@@ -2,6 +2,8 @@ import React, { useState, useEffect, use } from 'react'
 import { useCart } from './CartManager';
 import './styling/PokeCard.css'
 import cards from './Cards.json'
+import CartTab from './CartTab';
+import CartManager from './CartManager';
 
 const PokemonCard = ({ card }) => {
 
@@ -24,7 +26,6 @@ const PokemonCard = ({ card }) => {
             <div className="pokemonGraphics">{card.Graphics} </div>
             <div className="pokemonPrice">{card.Price} </div>
             <button className='add-to-cart' onClick={() => addItemsToCartFunction(card)}>ADD TO CART</button>
-
         </div>
     )
 }

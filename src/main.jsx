@@ -13,16 +13,19 @@ import CartManager from './CartManager';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CartManager>
-      <NavBar />
-      <PokemonCards />
-      <CartTab />
-      <createRoot />
-      <BrowserRouter>
+    <BrowserRouter>
+      <CartManager>
+        <NavBar />
         <Routes>
+          <Route index element={<MainPage />} />
+          <Route path='/shop' element={<PokemonCards />} />
 
         </Routes>
-      </BrowserRouter>
-    </CartManager>
+      </CartManager>
+    </BrowserRouter>
   </StrictMode>,
 )
+
+/*
+<PokemonCards />
+<NavBar /> */

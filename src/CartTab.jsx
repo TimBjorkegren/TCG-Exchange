@@ -2,9 +2,8 @@ import React, { useState, useEffect, use } from 'react'
 import './styling/Carttab.css'
 import { useCart } from './CartManager';
 
-const CartTab = ({ cartItems = [] }) => {
-    const { deleteItemsFromCartFunction } = useCart();
-    const { addItemsToCartFunction } = useCart();
+const CartTab = () => {
+    const { cartItems, deleteItemsFromCartFunction, addItemsToCartFunction } = useCart();
 
     return (
         <div className='cartTab'>
