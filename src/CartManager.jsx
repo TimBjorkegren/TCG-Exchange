@@ -39,7 +39,14 @@ export const CartManager = ({ children }) => {
     }
 
     const totalAmountCalcFunction = () => {
-        return cartItems.reduce((total, item) => total + item.product.Price * item.quantity, 0)
+        return cartItems.reduce((total, item) => {
+            const price = parseFloat(item.product.Price);
+            if (Number.isNaN(price)) {
+                console.error("invalid");
+                return total;
+            }
+            return total + price * item.quantity;
+        }, 0)
     }
 
 
