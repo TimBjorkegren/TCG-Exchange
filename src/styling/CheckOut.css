@@ -25,10 +25,15 @@
     width: 200px;
 }
 
+
 .CheckOutContainer .shopCart {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.CheckOutContainer .totalsum p {
+    width: 200px;
 }
 
 .CheckOutContainer li {
@@ -44,9 +49,10 @@
 .con {
     display: flex;
     justify-content: center;
+    margin-left: 20px;
 }
 
-button {
+.CheckOutContainer button {
     text-decoration: none;
     width: 80px;
     height: 40px;
