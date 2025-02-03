@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import './styling/Navbar.css'
 import { useCart } from './CartManager';
 
+
 const NavBar = ({ }) => {
     const [showCart, setShowCart] = useState(false);
     const { cartItems = [] } = useCart() || {};
@@ -35,7 +36,7 @@ const NavBar = ({ }) => {
             </div>
             <div className='navRight'>
                 <button onClick={() => setShowCart(!showCart)}>
-                    <i className="fas fa-shopping-cart"></i>
+                    <i className="fa-solid fa-cart-shopping"></i>
                 </button>
                 <span>{totalQuantity} </span>
             </div>
