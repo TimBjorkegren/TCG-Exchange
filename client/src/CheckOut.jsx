@@ -5,12 +5,17 @@ import { useCart } from './CartManager';
 
 const CheckOut = () => {
 
+    const [orderDetails, setOrderDetails] = useState(null);
+    const [isOrderSubmitted, setIsOrderSubmitted] = useState(false);
+
     function handleSubmit(e) {
         e.preventDefault();
 
         const form = e.target;
         const formData = new FormData(form);
         const customerInfo = Object.fromEntries(formData.entries());
+
+        console.log("customer info:", customerInfo)
 
         const orderData = {
             customer: customerInfo,
@@ -19,6 +24,7 @@ const CheckOut = () => {
                 name: item.product.nameOfCard,
                 price: parseFloat(item.product.Price),
                 quantity: item.quantity
+
             })),
             total: calcSum
         };
@@ -32,9 +38,14 @@ const CheckOut = () => {
         })
             .then(response => response.json())
             .then(data => {
+                console.log("Full response from server:", data);
                 if (data) {
+                    setOrderDetails(data.order)
+                    setIsOrderSubmitted(true)
                     alert("Order submitted successfully")
                     console.log("order response", data)
+                    console.log(customerInfo);
+                    console.log("Customer Name:", data.order.customer.NameOfCustomer);
                 }
             })
             .catch(error => {
@@ -54,44 +65,66 @@ const CheckOut = () => {
     return (
         <div className='con'>
             <div className='CheckOutContainer'>
-                <div className='shopCart'>
-                    <p>Items in your cart:</p>
-                    {cartItems.length > 0 ? (
+                {isOrderSubmitted ? (
+                    <div className='receipt'>
+                        <h3>Receipt</h3>
+                        <p><strong>Customer Name:</strong> {orderDetails.customer.nameOfCustomer}</p>
+                        <p><strong>Address:</strong> {orderDetails.customer.address}</p>
+                        <p><strong>Phone Number:</strong> {orderDetails.customer.phoneNumber}</p>
+                        <h4>Items:</h4>
                         <ul>
-                            {cartItems.map((item, index) => (
-                                <li key={index}>{item.product.nameOfCard} - Quantity:{item.quantity} - {item.product.Price} </li>
+                            {orderDetails.items.map((item, index) => (
+                                <li key={index}>
+                                    {item.name} - Quantity: {item.quantity} - Price: ${item.price} - Total: ${item.price * item.quantity}
+                                </li>
                             ))}
                         </ul>
-                    ) : (
-                        <p>No items in your cart</p>
-                    )}
-                </div>
-                <form method='post' onSubmit={handleSubmit}>
-                    <label>
-                        Credit Card Number
-                        <input name='creditcard' type='text'></input>
-                    </label>
-                    <label>
-                        Address
-                        <input name='address' type='text'></input>
-                    </label>
-                    <label>
-                        PhoneNumber
-                        <input name='PhoneNumber' type='text'></input>
-                    </label>
-
-                    <div className='totalsum'>
-                        <p> Your total price: ${(calcSum)} </p>
+                        <h4>Total Amount: ${orderDetails.total}</h4>
                     </div>
-                    <div className='buttonCon'>
-                        <button type='submit'>Submit</button>
+                ) : (
+                    <div className='shopCart'>
+                        <p>Items in your cart:</p>
+                        {cartItems.length > 0 ? (
+                            <ul>
+                                {cartItems.map((item, index) => (
+                                    <li key={index}>{item.product.nameOfCard} - Quantity: {item.quantity} - {item.product.Price}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p>No items in your cart</p>
+                        )}
                     </div>
-                </form>
+                )}
+                {!isOrderSubmitted && (
+                    <form method='post' onSubmit={handleSubmit}>
+                        <label>
+                            First and Last Name
+                            <input name='NameOfCustomer' type='text' />
+                        </label>
+                        <label>
+                            Credit Card Number
+                            <input name='creditcard' type='text' />
+                        </label>
+                        <label>
+                            Address
+                            <input name='address' type='text' />
+                        </label>
+                        <label>
+                            PhoneNumber
+                            <input name='PhoneNumber' type='text' />
+                        </label>
 
-
+                        <div className='totalsum'>
+                            <p>Your total price: ${calcSum}</p>
+                        </div>
+                        <div className='buttonCon'>
+                            <button type='submit'>Submit</button>
+                        </div>
+                    </form>
+                )}
             </div>
-        </div >
-    )
-}
+        </div>
+    );
+};
 
 export default CheckOut
