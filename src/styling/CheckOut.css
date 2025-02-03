@@ -62,3 +62,18 @@
     align-items: center;
     cursor: pointer;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttonCon {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 200px;
+}

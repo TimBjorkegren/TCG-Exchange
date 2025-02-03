@@ -58,7 +58,9 @@ const CheckOut = () => {
                     <div className='totalsum'>
                         <p> Your total price: ${(calcSum)} </p>
                     </div>
-                    <button type='submit'>Submit</button>
+                    <div className='buttonCon'>
+                        <button type='submit'>Submit</button>
+                    </div>
                 </form>
 
 
