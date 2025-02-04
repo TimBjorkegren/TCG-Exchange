@@ -68,7 +68,7 @@ const CheckOut = () => {
                 {isOrderSubmitted ? (
                     <div className='receipt'>
                         <h3>Receipt</h3>
-                        <p><strong>Customer Name:</strong> {orderDetails.customer.nameOfCustomer}</p>
+                        <p><strong>Customer Name:</strong><br /> {orderDetails.customer.nameOfCustomer}</p>
                         <p><strong>Address:</strong> {orderDetails.customer.address}</p>
                         <p><strong>Phone Number:</strong> {orderDetails.customer.phoneNumber}</p>
                         <h4>Items:</h4>
